@@ -8,5 +8,43 @@
 </head>
 <body>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/1QYBiNRu1ok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- *<iframe>은 HTML에서 다른 HTML 문서나 외부 웹 페이지를 포함하는 데 사용되는 태그, 인라인 요소이며, 지정된 웹 페이지를 현재 페이지에 삽입하여 표시할 수 있다.-->
+    <!-- *width : 너비(CSS로 처리권장), height: 높이(CSS로 처리권장), title: 광범위적으로 사용가능한 alt. frameborder: player 바깥 쪽 frame 의 선(CSS로 처리권장). allow: youtube API 전용 속성 -->
+    <!-- <iframe src="http://www.dodammedi.com/" width="1280" height="860" frameborder="0"></iframe> -->
+    <!-- *홈페이지 문서까지 가지고 올수 있다. -->
+
+    <embed src="https://www.youtube.com/embed/1QYBiNRu1ok" width="560" height="315">
+    <!-- *<iframe> 대체로 개발된 태그인데 보안성을 향상 시키고 싶으면 embed태그 사용함 -->
+    <!-- *<embed>은 주로 멀티미디어 리소스를 임베드(내장)하여 표시하는데 사용됨, 오디오, 비디오, 플래시 애니메이션 등의 멀티미디어 리소스를 표시하고 재생할수 있다.-->
+
+    <video controls autoplay muted loop preload="auto" poster="images/181005-stock-sorry-sign-ew-1147a.png/480">
+        <source src="mp4/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+        <source src="mp4/file_example_MP4_640_3MG.mp4" type="video/mp4">
+        <source src="mp4/file_example_MP4_1280_10MG.mp4" type="video/mp4">
+        <source src="mp4/file_example_MP4_1920_18MG.mp4" type="video/mp4">
+    </video>
+    <!-- *한개의 영역에서 여러개의 비디오 파일을 연결시키고 싶을 때 사용하는 source태그 video, audio 파일 전용 태그 audio 태그는 잘 안 씀 -->
+    <!-- *핸드폰의 네트워크 처리 속도, 혹은 해상도에 따라서 각 환경에 맞는 영상 파일을 전송하는 방법으로 영상을 띄운다. 이기능은 iframe, embed에는 없다. -->
+    <!-- *source 태그를 사용하면 video에 src속성은 지워도 된다. -->
+
+    <audio src="mp3/file_example_MP3_700KB.mp3" controls></audio>
+    <!--
+        !mp4는 사파리, IE9 이상, 아이폰, 아이패드, 안드로이드, 윈도우7 폰 지원
+        !webM은 FF4이상, 오페라, 크롬 지원,
+        !ogg는 FF구버전, 오페라구버전 지원,
+        !3g 모바일 장치들 지원
+    -->
+    <!--
+        *autoplay는 video, audio 동일 속성값, 자동 재생을 시킵니다.     
+        *controls는 video, audio 동일 속성값, 재생영역에 제어버튼을 활성화 하는 속성값. 
+        *loop는 video, audio 동일 속성값, 반복 재생을 시키는 속성값. 
+        *preload는 video, audio 동일 속성값, 스트리밍 방식이 아닌 백그라운드 다운로드를 통해 재생. (우리나라에서 안 쓰는 속성)
+        *muted는 video, audio 동일 속성값, 스피커 활성화, 미디어 객체를 불러왔을때, 초기 설정을 mute 상태로 불러오는 속성값. 
+        *src는 video, audio 동일 속성값, 미디어 객체를 지정하는 속성값. 
+        *poster 는 video 전용 속성값, video객체를 불러오지 못하거나 thumbNail로 이미지(autoplay off)를 출력 시키는 속성값`. 
+        *width, height는 video 전용 속성값, video 객체 영역의 크기를 정하는 속성값. 
+        *source는 여러 파일을 클라이언트 환경에 따라 다르게 적용할 수 있다.
+    -->
+
 </body>
 </html>
