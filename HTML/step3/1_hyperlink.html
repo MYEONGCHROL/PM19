@@ -16,6 +16,53 @@
     </style>
 </head>
 <body>
-    
+    <h1>하이퍼링크 목록</h1>
+    <p>
+        hyperLink를 이용하여 원하는 URL 및 내 위치로 이동 하는 법,
+        file Download Link 및 mail Link등을 배워보자.
+    </p>
+    <!-- ?ul>li*6>a -->
+    <ul>
+        <li>
+            <a href="https://www.naver.com" target="_self">NAVER 바로가기</a>
+        </li>
+        <!-- 
+            * a태그의 속성 href 특성을 통해 다른 페이지의 어느 위치, 파일, 이메일 주소와 그 외 다른 URL로 연결할 수 있는 하이퍼링크를 만듬. <a>안에 콘텐츠는 링크 목적지의 설명을 나타내야 한다
+            * target 으로 불러오는 방식을 설정가능
+            * target의 _self는 현재 페이지에서 바로 불러오는 방식을 말한다.    
+         -->
+        <li>
+            <a href="https://www.daum.net" target="_blank">DAUM 바로가기</a>
+        <!-- 
+            *target의 _blank는 새탭으로 불러오는 방식을 말한다.
+         -->
+        </li>
+        <li>
+            <a href="../step2/step2.zip">file Download</a>
+        </li>
+        <!-- 
+            *step2를 알집으로 변경해서 상대경로를 ../통해서 파일을 집어서 가지고 온다.
+            *href에 해당 경로에 맞는 파일 이름과 확장명을 적어 넣으면 파일 다운로드 기능을 활성화 할 수 있다.
+         -->
+        <li>
+            <a href="mailto:x09430@naver.com?subject=질문있습니다.">mail 보내기</a>
+        </li>
+        <!-- 
+            * mailto:로 선언된 경우 해당 메일 주소와 ?subject=제목내용(기본 영문상태지원)으로 제목 표시까지
+            * 한번에 기입 된 상태를 만들 수 있다.
+         -->
+        <li>
+            <a href="tel:+821077260772">걸기</a>
+        </li>
+        <!-- 
+            *tel: 로 선언하면 전화걸기 기능이 가해지고 mobile에서는 diaLpad가 자동으로 열리며 번호 기입상태를 완성한다.
+         -->
+        <li>
+            <a href="#targetAnchor">바로가기</a>
+        </li>
+    </ul>
+    <div id="targetAnchor">
+        바로가기 목표지점
+    </div>
 </body>
 </html>
