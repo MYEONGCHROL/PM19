@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body>
+    <!--*표 형식을 만드는 태그 -->
+    <table>
+        <caption>month / savings Table</caption>
+        <!-- *table 쓸때는 무조건 caption태그를 써야 한다. -->
+        <!-- *caption 은 반드시 table 시작 태그 뒤에 와야한다. -->
+        <colgroup>
+            <col style="background-color: red; width: 200px">
+            <col style="background-color: yellow; width: 150px;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>month</th>
+                <th>savings</th>
+            </tr>
+        </thead>
+        <!-- *thead는 테이블의 상단부를 뜻한다. -->
+        <tfoot>
+            <tr>
+                <th>Sum</th>
+                <th>%100</th>
+            </tr>
+        </tfoot>
+        <!-- *tfoot 은 테이블의 한단부 결과값을 뜻한다. -->
+        <tbody>
+            <tr>
+                <td>jan</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Fed</td>
+                <td>$80</td>
+            </tr>
+        </tbody>
+        <!-- *실질적 데이터가 들어가는 공간이 tody이다. -->
+    </table>
+</body>
+</html>
