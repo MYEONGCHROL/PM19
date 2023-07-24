@@ -45,7 +45,7 @@
                     <label for="btn_chk4">check4</label>
                 </li>
                 <li>
-                    <textarea name="" id="" cols="30" rows="10">긴 문장 혹은 문단등의 순수 데이터 처리</textarea>
+                    <textarea cols="30" rows="10">긴 문장 혹은 문단등의 순수 데이터 처리</textarea>
                 </li>
                 <li>
                     <select>
@@ -72,6 +72,28 @@
         </fieldset>
         <fieldset>
             <legend>HTML5 input</legend>
+            <label for="userName2">이름 : </label>
+            <input type="text" id="userName2" required>
+            <input type="text" id="userName2" required maxlength="8" autofocus readonly>
+            <!-- 
+                ?readonly : 말 그대로 읽기 전용. 읽는 것은 가능하나 쓰는 것은 불가.
+                !disabled : 읽을 수도 쓸수도 없다.
+             -->
+             <input type="email" placeholder="x09430@naver.com">
+             <input type="url" placeholder="https://www.file-examples.com">
+             <input type="tel" placeholder="01077260772">
+             <input type="number" min="1" max="100" step="1" value="0">
+             <!-- *상, 하 버튼으로 숫자를 기입하는 스핀박스를 생성한다.<input type="number" 최저값, 최대값, 상승값, 초기값>-->
+             <input type="range" min="-2" max="2" step="1" value="0">
+             <!-- *슬라이드바로 숫자를 기입하는 막대를 생성한다.<input type="range" 최소값, 최대값, 상승값, 초기값>-->
+             <input type="date">
+             <input type="time">
+             <input type="month">
+             <input type="week">
+             <input type="datetime-local">
+             <!-- <input type="datetime"> 죽은 테그-->
+             <label for="typeColor">색상선택 : </label>
+             <input type="color" id="typeColor">
         </fieldset>
     </form>
 </body>
