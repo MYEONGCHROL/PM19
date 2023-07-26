@@ -12,7 +12,7 @@
             text-align: center;
         }
 
-            header nav ul li {
+            header nav li {
                 display: inline-block;
                 width: 19%;
                 background-color: blue;
@@ -43,9 +43,37 @@
             text-align: center;
             background-color: orange;
         }
+
+
+        
     </style>
 </head>
 <body>
-    
+    <!-- 모든 div에 class를 붙이는건 좋지 않음 -->
+    <!-- id는 for와 싱크를하는 백엔드 위주의 태그 
+        input태그를 쓸때만 선점. 그 외에는 위험-->
+    <header>
+        <span>global Header</span>
+        <nav>
+            <ul>
+                <li>menu1</li>
+                <li>menu2</li>
+                <li>menu3</li>
+                <li>menu4</li>
+                <li>menu5</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <article>
+            <span>text</span>
+        </article>
+        <aside>
+            <span>quick menu</span>
+        </aside>
+    </section>
+    <footer>
+        <span>global footer</span>
+    </footer>
 </body>
 </html>
