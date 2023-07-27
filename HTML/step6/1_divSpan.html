@@ -36,16 +36,14 @@
 
             section aside {
                 background-color: green;
-                width: 18%;
+                width: 19%;
             }
 
         footer {
             text-align: center;
             background-color: orange;
-        }
-
-
-        
+            color: blue;
+        }      
     </style>
 </head>
 <body>
@@ -53,8 +51,10 @@
     <!-- id는 for와 싱크를하는 백엔드 위주의 태그 
         input태그를 쓸때만 선점. 그 외에는 위험-->
     <header>
+        <!-- *header : 전체 사이트 머리부분 -->
         <span>global Header</span>
         <nav>
+        <!-- *nav: 로그인, 목차 네비게이터 등으로 사용된다. -->
             <ul>
                 <li>menu1</li>
                 <li>menu2</li>
@@ -65,14 +65,20 @@
         </nav>
     </header>
     <section>
+        <!-- *section : 요소는 주제별(큰 의미) 영역들을 구루화 하기 위해 일반적인 section을 의미한다. 소개, 뉴스 항목, 공지사항, 연락처, 정보 등의 내용을 그룹화 하기 위한 섹션으로 사용하며 하나의 웹 페이지에 여러 섹션이 있을 수 있다. 하위 항목으로는 section안에 h2~h6 요소와 함께 사용하여 제목별로 나눌 수 있다. section에는 꼭 제목이 있어야 한다. 제목이 없으면 div를 사용하는게 좋다.(중심내용 공간) -->
         <article>
+            <!-- *article : 페이지의 주요 내용정보를 담을 때 사용, article안에 h2~h6 요소와 함께 사용하여 제목별로 나눌 수 있다. article에는 꼭 제목이 있어야 한다. 제목이 없으면 div를 사용하는게 좋다.(글자 공간) -->
             <span>text</span>
+            <!-- *span : 구문 콘텐츠를 위한 통용 일라인 컨테이너 매우 작은 공간입니다. <span> 은 <div>와 매우 유사하지만, <div>는 블록 레벨 요소인 반면 <span>은 인라인 요소입니다.  -->
         </article>
         <aside>
+            <!-- *aside : 본문 내용을 서포트 할 때 사용 -->
+            <!-- *article 내에 (내부영역 aside) : article 에 종속되어 있는 내용을 서포트 해주는 정보를 담을 때 사용 (외부영역 aside) : 사이트 전체의 해당 되는 내용을 서포트 할 수 있는 정보를 담음 간단한 nav(네비) 넣을 수 있음-->
             <span>quick menu</span>
         </aside>
     </section>
     <footer>
+        <!-- *footer : 푸터 영역을 나타낸다. 주로 페이지 하단에 있으며 사이트 information들이 있다. 사이트 부제, 저자, 정보, 저작권정보, 연락처, 페이지 맨 위로 되돌아가는 top 버튼 등 들어가며 사이트 정보를 쉽게 얻을 수 있게 해놓은 부분이다. -->
         <span>global footer</span>
     </footer>
 </body>
