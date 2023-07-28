@@ -1,0 +1,4 @@
+black / Roboto - 13px
+Light / Roboto - 14px
+black / Playfair Display - 32px
+Regular / Hammersmith one -16px
