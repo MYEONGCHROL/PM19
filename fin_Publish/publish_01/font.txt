@@ -1,4 +1,22 @@
-black / Roboto - 13px
-Light / Roboto - 14px
-black / Playfair Display - 32px
-Regular / Hammersmith one -16px
+black / Roboto
+Regular / Roboto 
+Light / Roboto
+black / Playfair Display
+Bold / Playfair Display
+Regular / Playfair Display
+Regular / Hammersmith one
+-------------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:wght@400;700;900&family=Roboto:wght@300;400;900&display=swap');
+
+font-family: 'Hammersmith One';
+font-family: 'Playfair Display';
+font-family: 'Roboto';
+
+-------------------------------
+암기하기
+Light 300
+Regular 400
+medium 500
+Bold 700
+Black 900
