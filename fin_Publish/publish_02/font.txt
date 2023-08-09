@@ -1,0 +1,20 @@
+Montserrat - semilbold
+Montserrat - bold
+Montserrat - black
+Montserrat - Regular
+Montserrat - Medium
+Crimson Pro - Regular
+Crimson Pro - Italic
+
+---------------------------
+
+Light 300
+Regular 400
+medium 500
+Bold 700
+Black 900
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital@0;1&family=Montserrat:wght@400;500;600;700;900&display=swap');
+
+font-family: 'Crimson Pro';
+font-family: 'Montserrat',;
