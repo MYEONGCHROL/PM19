@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+/* 
+    웹폰트로드하는 방법
+    1.영어권이냐 > 영어권이 아니냐
+
+    -영어권 : alternate(대체).
+    -비영어권 : 앞에 있는 font에 영문이 없을 시 뒤에 폰트로 영문변경.
+    -비영어권 : 앞, 뒤 폰트 모드 한글 font일 경우. alternate(대체).
+*/
+h1,h2,h3{
+    font-family: 'Nanum Gothic';
+}
+h1{
+    font-weight: 800; font-size: 20px; color: rgba(0, 102, 255, 0.5);
+}
+h2{
+    font-weight: 700; font-size: 15px; color: rgba(155, 155, 0, 0.8);
+}
+h3{
+    font-weight: 400; font-size: 12px; color: rgba(0, 150, 150, 0.52);
+}
+p{
+    font-size: 14px;
+}
+.letter{
+    letter-spacing: 5px;
+}
+.word{
+    word-spacing: 10px;
+}
+p[class^='w_']{
+    width: 150px; border: 1px solid black; line-height: 21px;
+}
+.w_normal{ 
+    white-space: normal;
+}
+.w_nowrap{
+    white-space: nowrap; overflow-x: hidden; text-overflow: ellipsis;
+}
+.v_alignTest img{
+    width: 200px; vertical-align: middle;
+}
+.v_alignTest span{
+    vertical-align: -100%;
+}
+/* 
+    ? vertical-align(수직정렬)
+    * 1. display: inline, inline-block인 애들끼리만.
+    * 2. 높은 애를 기준으로 preset(ex > top, middle, bottom....)
+    * 3. 작은 애가 높은 애들 기준으로 움직임.
+    * 4. 작은 애에게 상대적 수치(%)를 이용하여 나머지 부분을 더 움직일 수 있다.
+    ! 작은애의 높이 를 기준으로100%를 잡고, 양수일경우 위로 , 음수일경우 아래로.
+*/
+.t_indent{
+    text-indent: 20px; font-size: 26px;
+}
+.test{
+    background: url("https://via.placeholder.com/150x50?text=blablaButton");
+    border: none; width: 150px; line-height: 50px; font-size: 12px;
+    text-indent: -9999px;
+}
+.t_deco_N{
+    text-decoration: none; text-transform: none; color: #090;
+}
+.t_deco_U{
+    text-decoration: underline; text-transform: lowercase; color: #009;
+}
+.t_deco_O{
+    text-decoration: overline; text-transform: capitalize; color: #900;
+}
+.t_deco_T{
+    text-decoration: line-through; text-transform: uppercase; color: #f63;
+}
+p{
+    width: 70%;
+}
+.DR_ltr{
+    text-align: left;
+}
+.DR_rtl{
+    text-align: right;
+}
