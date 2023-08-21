@@ -79,4 +79,6 @@ p{
 }
 .DR_rtl{
     text-align: right;
+    /* center : 중앙 */
 }
+/* ! text- align은 inline 관련 속성을 정렬할 수 있다. */

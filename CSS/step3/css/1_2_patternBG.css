@@ -1,0 +1,22 @@
+html,
+body,
+.wrap{
+    height: 100%;
+}
+body, .wrap p{
+    margin: 0;
+}
+.wrap{
+    background-image: url('../image/pt.gif');
+    background-repeat: repeat;
+    /* ?backgroud로 image를 사용시 pattern이 무조건 일어난다. */
+}
+.wrap p{
+    background-color: deeppink; padding: 20px; margin-bottom: 20px;
+}
+.wrap button{
+    line-height: 75px; padding: 0 40px; color: white;
+    background-image: url('../image/pt_ex.png');
+    background-repeat: repeat-x; border: none;
+}
+/* ! 패턴이 무조건 일어나기 때문에 안보여도 반복을 꺼줘야 함. 바깥 테두리 선은 접근성 때문에 외관상 border로 없애줌 */
