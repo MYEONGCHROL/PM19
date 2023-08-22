@@ -29,3 +29,7 @@ body{
 		top, center, bottom - yAxis
 		%,px 등의 단위도 사용가능
 */
+p{
+    height: 2000px; margin: 0; padding: 200px;
+    background-color: rgba(30, 30, 30, 0.5); font-size: 40px;
+}
